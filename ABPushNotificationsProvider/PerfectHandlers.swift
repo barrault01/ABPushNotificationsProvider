@@ -37,8 +37,9 @@ public func PerfectServerModuleInit() {
     
     // Create our SQLite tracking database.
     do {
+        
         let sqlite = try SQLite(AUTH_DB_PATH)
-        try sqlite.execute("CREATE TABLE IF NOT EXISTS tokens (id_token INTEGER, key TEXT)")
+        try sqlite.execute("CREATE TABLE IF NOT EXISTS tokens (id_token INTEGER PRIMARY KEY, key TEXT)")
     } catch {
         print("Failure creating tracker database at " + AUTH_DB_PATH)
     }
@@ -65,10 +66,11 @@ class IndexHandler: RequestHandler {
         }
         
         
-        try sqlite.forEachRow("SELECT key FROM tokens") {
+        try sqlite.forEachRow("SELECT key,id_token FROM tokens") {
             (stmt:SQLiteStmt, i:Int) -> () in
             let key = stmt.columnText(0)
-            response.appendBodyString("\n token: \(key)")
+            let id = stmt.columnInt(1)
+            response.appendBodyString("\n token: \(key) for id: \(id)")
 
         }
         

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "41633EE3862382F434AF0B7B81A006BA2FB2891A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "41633EE3862382F434AF0B7B81A006BA2FB2891A" : 0,
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6356A36B-8606-416F-821D-FD7845F6A427",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "41633EE3862382F434AF0B7B81A006BA2FB2891A" : "ABPushNotificationsProvider\/",
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : "Perfect\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ABPushNotificationsProvider",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ABPushNotificationsProvider.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/barrault01\/ABPushNotificationsProvider.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "41633EE3862382F434AF0B7B81A006BA2FB2891A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2306DAE0C98D148736A05084B6FAB44F03B4909"
+    }
+  ]
+}
