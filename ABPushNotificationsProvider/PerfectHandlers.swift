@@ -64,14 +64,11 @@ class IndexHandler: RequestHandler {
             sqlite.close()
         }
         
-        var values = [String]()
         
         try sqlite.forEachRow("SELECT key FROM tokens") {
             (stmt:SQLiteStmt, i:Int) -> () in
-            
             let key = stmt.columnText(0)
-            values.append(key)
-            response.appendBodyString("\n \(key)")
+            response.appendBodyString("\n token: \(key)")
 
         }
         
